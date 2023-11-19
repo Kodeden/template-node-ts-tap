@@ -4,14 +4,13 @@
     "@tsconfig/node-lts/tsconfig.json"
   ],
   "compilerOptions": {
-    /* Base Options: */
+    "allowJs": false,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "target": "es2022",
-    "allowJs": false,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
 
     /* Strictness */
     "strict": true,
@@ -35,5 +34,6 @@
     /* If your code doesn't run in the DOM: */
     "lib": ["es2022"]
   },
-  "include": ["src/**/*", ".eslintrc.cjs"]
+  "include": ["src/**/*", ".eslintrc.cjs"],
+  "exclude": ["node_modules"]
 }
