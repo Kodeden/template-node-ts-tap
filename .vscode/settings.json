@@ -15,6 +15,8 @@
     }
   ],
   "files.autoSave": "onFocusChange",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
   "typescript.validate.enable": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsdk": "node_modules/typescript/lib"
