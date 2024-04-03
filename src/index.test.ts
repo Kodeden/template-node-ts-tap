@@ -1,10 +1,9 @@
-import { describe, expect, it } from "vitest";
+import tap from "tap";
 import { add2Nums } from "./index.js";
 
-describe("add2Nums", () => {
-  it("should return the sum of two numbers", () => {
-    expect(add2Nums(2, 3)).toBe(5);
-    expect(add2Nums(-1, 5)).toBe(4);
-    expect(add2Nums(0, 0)).toBe(0);
-  });
+void tap.test("add2Nums", (t) => {
+  t.equal(add2Nums(2, 3), 5, "should return the sum of two numbers");
+  t.equal(add2Nums(-1, 5), 4, "should return the sum of two numbers");
+  t.equal(add2Nums(0, 0), 0, "should return the sum of two numbers");
+  t.end();
 });
