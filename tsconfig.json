@@ -1,8 +1,4 @@
 {
-  "extends": [
-    "@tsconfig/recommended/tsconfig.json",
-    "@tsconfig/node-lts/tsconfig.json"
-  ],
   "compilerOptions": {
     "allowJs": false,
     "esModuleInterop": true,
@@ -29,9 +25,7 @@
     "module": "NodeNext",
     "outDir": "dist",
     "sourceMap": true,
-
-    /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"]
+    "lib": ["es2023"]
   },
   "include": ["src/**/*", ".eslintrc.cjs"],
   "exclude": ["node_modules"]
